@@ -6,7 +6,7 @@
     <title>Tabel</title>
     <style>
        .container {
-        width: 250px;
+        width: 275px;
         margin-top: 10px;
         border-collapse: collapse;
         margin: auto;
@@ -15,6 +15,11 @@
        }
        .input {
         margin-bottom: 10px;
+        border-radius: 1%;
+       }
+       .form-input {
+        display: flex;
+        flex-direction: column;
        }
        .btn {
         margin-top: 15px;
@@ -25,27 +30,34 @@
 <body>
     <div class="container">
     <h1 align="center">Tambah Barang</h1>
-    <div>
-        <label>Nama</label><br>
-        <br><input type="text" class="input"></br>
+    <div class="form-input">
+        <label>Nama</label>
+        <input type="text" class="input">
     </div>
-        <label>Kode</label><br>
-        <br><input type="text" class="input"></br>
+    <div class="form-input">
+        <label>Kode</label>
+        <input type="text" class="input">
     <div>
-        <label>Tanggal Masuk</label><br>
-        <br><input type="date" class="input"></br>
+    <div class="form-input">
+        <label>Tanggal Masuk</label>
+        <input type="date" class="input">
     </div>
-        <label>tanggal Expried</label><br>
-        <br><input type="date" class="input"></br>
+    <div class="form-input">
+        <label>tanggal Expried</label>
+        <input type="date" class="input">
     <div>
-        <label>Jumlah Stock</label><br>
-        <br><input type="number" class="input"></br>
+        <div class="form-input">
+        <label>Jumlah Stock</label>
+        <input type="number" class="input">
     </div>
-        <label>Harga Beli</label><br>
-        <br><input type="number" class="input"></br>
+        <div class="form-input">
+        <label>Harga Beli</label>
+        <input type="number" class="input">
     <div>
-        <label>Harga Jual</label><br>
-        <br><input type="number" class="input"></br>
+        <div class="form-input">
+        <label>Harga Jual</label>
+        <input type="number" class="input">
     </div>
+    <button class="btn">Simpan</button>
 </body>
 </html>
